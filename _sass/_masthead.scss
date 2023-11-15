@@ -32,7 +32,8 @@
 }
 
 .masthead__menu {
-   display: block;   
+//   display: block;
+     display: table;  //add
   ul {
     margin: 0;
     padding: 0;
