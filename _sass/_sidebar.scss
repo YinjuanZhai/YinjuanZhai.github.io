@@ -34,13 +34,10 @@
     font-family: $sans-serif-narrow;
   }
 
-/*  h3, h4 {
-   font-size: $type-size-6;
-  }   */
-   h3 {
-   font-size: 18px;
-  } 
-
+  h3, h4 {
+   font-size: $type-size-5;  //1em,16px
+  }  
+   
   p, li {
     font-family: $sans-serif;
     font-size: $type-size-6;  //0.75em, 12px
@@ -56,15 +53,21 @@
   margin-bottom: 1em;
 
   @include breakpoint($large) {
-    position: relative;
+//    position: relative;
+     position: sticky !important;  //add
     float: right;
+     top: 0;  //add
+     right: 0; //add
     width: $right-sidebar-width-narrow;
-    margin-left: span(0.5 of 12);
+//    margin-left: span(0.5 of 12);
+      margin-right: -1 * $right-sidebar-width-narrow;
+      padding-left: 1em;
+      padding-top: 1em !important;  //add
     z-index: 10;
   }
 
-  @include breakpoint($x-large) {
-    width: $right-sidebar-width;
+/*  @include breakpoint($x-large) {
+    width: $right-sidebar-width;   */
   }
 }
 
@@ -75,8 +78,7 @@
 .author__avatar {
   display: table-cell;  
   vertical-align: top;
-//  width: 36px;  // delete;
-   width: auto; height: auto;  //add
+  width: 36px;  
   // set width only, for non-square avatars
   // height: 36px;
 
@@ -100,10 +102,8 @@
 .author__content {
   display: table-cell;
   vertical-align: top;
-/*  padding-left: 15px;
-  padding-right: 25px;  */
-  padding-left: 0px;   //add
-  padding-right: 0px;   //add
+  padding-left: 15px;
+  padding-right: 25px;  
   line-height: 1;
 
   @include breakpoint($large) {
@@ -119,8 +119,7 @@
 
   @include breakpoint($large) {
     margin-top: 10px;
- //   margin-bottom: 10px;
-     margin-bottom: 0;
+    margin-bottom: 10px;
   }
 }
 .sidebar .author__name {
@@ -134,7 +133,6 @@
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 20px;
-     margin-left: 0; margin-right: 0; //add
   }
 }
 
@@ -191,13 +189,6 @@
   }
 
   &:before {
-     font-size: 0.75em; //add, 12px
-     font-weight: bold; //add
-     border-radius: 4px;  //add
-     margin-top: o.5em;
-     margin-bottom: 0.5em;
-     margin-left: 1em;
-     margin-right: 1em;   //194-200,add
     display: block;
     content: "";
     position: absolute;
@@ -237,14 +228,12 @@
 
   a {
     display: block;
-//    margin-bottom: 5px;
-     margin-botom: 0.5em; //add, 12px
-     line-height: 1.5;  //add
+    margin-bottom: 5px;
     padding-right: 5px;
     padding-top: 2px;
     padding-bottom: 2px;
     color: inherit;
-    font-size: $type-size-6;  //0.75em, 12px
+    font-size: $type-size-5;  
     text-decoration: none;
 
     &:hover {
