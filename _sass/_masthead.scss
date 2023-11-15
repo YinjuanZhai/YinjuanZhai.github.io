@@ -32,8 +32,7 @@
 }
 
 .masthead__menu {
-//   display: block;
-     display: table;  //add
+
   ul {
     margin: 0;
     padding: 0;
@@ -43,7 +42,7 @@
 }
 
 .masthead__menu-item {
-  
+   display: block;  //add
   list-style-type: none;
   white-space: nowrap;
 
