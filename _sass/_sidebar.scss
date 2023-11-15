@@ -35,12 +35,12 @@
   }
 
   h3, h4 {
-    font-size: $type-size-5;
-  }
-
+   font-size: $type-size-5;  //1em,16px
+  }  
+   
   p, li {
     font-family: $sans-serif;
-    font-size: $type-size-6;
+    font-size: $type-size-6;  //0.75em, 12px
     line-height: 1.5;
   }
 
@@ -53,15 +53,21 @@
   margin-bottom: 1em;
 
   @include breakpoint($large) {
-    position: relative;
+//    position: relative;
+     position: sticky !important;  //add
     float: right;
+     top: 0;  //add
+     right: 0; //add
     width: $right-sidebar-width-narrow;
-    margin-left: span(0.5 of 12);
+//    margin-left: span(0.5 of 12);
+      margin-right: -1 * $right-sidebar-width-narrow;
+      padding-left: 1em;
+      padding-top: 1em !important;  //add
     z-index: 10;
   }
 
-  @include breakpoint($x-large) {
-    width: $right-sidebar-width;
+/*  @include breakpoint($x-large) {
+    width: $right-sidebar-width;   */
   }
 }
 
@@ -70,9 +76,9 @@
    ========================================================================== */
 
 .author__avatar {
-  display: table-cell;
+  display: table-cell;  
   vertical-align: top;
-  width: 36px;
+  width: 36px;  
   // set width only, for non-square avatars
   // height: 36px;
 
@@ -97,7 +103,7 @@
   display: table-cell;
   vertical-align: top;
   padding-left: 15px;
-  padding-right: 25px;
+  padding-right: 25px;  
   line-height: 1;
 
   @include breakpoint($large) {
@@ -186,7 +192,7 @@
     display: block;
     content: "";
     position: absolute;
-    top: -11px;
+    top: -11px; 
     left: calc(50% - 10px);
     width: 0;
     border-style: solid;
@@ -227,7 +233,7 @@
     padding-top: 2px;
     padding-bottom: 2px;
     color: inherit;
-    font-size: $type-size-5;
+    font-size: $type-size-5;  
     text-decoration: none;
 
     &:hover {
