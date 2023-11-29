@@ -15,16 +15,14 @@ The following pictures record my experience as a volunteer in Nanjing Qixia Dist
 < img src="https://YinjuanZhai.github.io/images/volunteer_nursing_home-2.jpg" alt="Volunteering 2" class="image-row">  
 < img src="https://YinjuanZhai.github.io/images/volunteer_nursing_home-3.jpg" alt="Volunteering 3" class="image-row">
 
-<style>  
-.image-row {  
-  width: 30%; /* 设置每张图片的宽度为容器宽度的三分之一 */  
-  margin-right: 10px; /* 根据需要调整间距 */ 
-  display: inline-block; /* 设置图片以行内块级元素的方式显示 */  
-}  
-</style>
-
 Teaching
 ======
 
-
+<style>  
+.image-row {  
+  width: 30%; /* 设置每张图片的宽度为容器宽度的三分之一 */  
+ /* margin-right: 10px; /* 根据需要调整间距 */ 
+  display: inline-block; /* 设置图片以行内块级元素的方式显示 */  
+}  
+</style>
 
